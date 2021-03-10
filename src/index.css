@@ -1,13 +1,152 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.userName{
+
+}
+.logOutBtn{
+  font-size: 18px;
+  height: 18px;
+  margin-bottom: 5px;
+}
+.logOutBtn button{
+  border-radius: 50%;
+}
+.logOutBtn button:hover{
+  font-size: 18px;
+  background-color: hotpink;
+}
+.form{
+  width: 300px;
+  height: 300px;
+  border: 0.5px solid white;
+  text-align: center;
+  margin: auto;
+  background-color: rgba(155, 255, 255, 0.1);
+}
+.inputs{
+  margin-top: 25px;
+  height: 25px;
+    width: 80%;
+    border-radius: 5%;
+}
+.btn{
+  margin-top: 25px;
+  height: 25px;
+  width: 80%;
+}
+.login-title{
+  color: white;
+    font-size: 40px;
+    margin-bottom: 0px
+}
+.book-list{
+  display: flex;
+  flex-wrap: wrap
+}
+.each-book{
+  width: 400px;
+  height: 300px;
+  border: 1px solid rgb(43, 20, 20);
+  margin: 5px;
+  overflow: auto;
+  padding: 10px;
+}
+.each-book:hover{
+  background-color: rgba(255, 255, 255, 0.7);
+}
+.booklist-title{
+  color: rgb(240, 222, 63);
+  text-shadow: 1px 1px #ff0000;
+  text-align: center;
+   font-size: 40px;
+}
+.booklist-title:hover{
+  letter-spacing: 1px;
+ 
+}
+.book-title{
+ text-align: center;
+ color: green;
+ font-size: 24px;
+ font-weight: bold
+}
+.book-title:hover{
+  color: black;
+  letter-spacing: 1px;
+}
+.book-author{
+ text-align: right;
+  color: red;
+}
+.book-description{
+  font-size: 16px;
+}
+.book-description:hover{
+  font-size: 19px;
+}
+.delBtn:hover{
+color: red;
+  font-size: 20px;
+}
+.SaveCancelBtn{
+  border:1px solid red;
+  margin-bottom: 5px;
+  margin-right: 4px;
+  font-weight: bold
+}
+.SaveCancelBtn:hover{
+  border:none;
+  color: red;
+  font-size: 20px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.book-title-input{
+  width: 90%;
 }
+.book-author-input{
+  width: 90%;
+}
+.book-description-input{
+  width: 90%;
+  height: 100%;
+}
+.BtnCreateNewBook{
+  margin-top: 30px;
+  margin-bottom: 50px;
+  height: 30px;
+  text-align: right;
+}
+.BtnCreateNewBook button{
+font-size: 20px;
+}
+.BtnCreateNewBook button:hover{
+  background-color: red;
+  font-size: 21px;
+  }
+  .createBook{
+    margin: auto;
+    text-align:center ; 
+    width: 350px;
+    height: 400px;
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+  .title-author{
+    width: 90%;
+    margin-top: 25px;
+    height: 25px;
+  }
+  .description{
+      width: 90%;
+    margin-top: 25px;
+    height: 180px;
+    overflow: hidden;
+    overflow: auto;
+  }
+  .add-close{
+    margin-top: 10px;
+    margin-left: 5px;
+
+  }
+  .add-close:hover{
+
+    color: red;
+  font-size: 20px;
+  }

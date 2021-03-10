@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+import './App.css';
+import LoginForm from './LoginForm';
+import { connect } from "react-redux";
+import React from "react"
+
+import "./index.css";
+
+class App extends React.Component {
+  render(){
+      return  (
+    <div className="body">
+        <LoginForm users={this.props.users}/> 
     </div>
   );
+ 
+}
+  }
+
+function mapStateToProps(state) {
+  return {
+    users: state.users
+  }
 }
 
-export default App;
+export default  connect(mapStateToProps)(App); 
